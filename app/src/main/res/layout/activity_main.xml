@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F9">
+
+    <!-- ================= MAIN SCROLL ================= -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ================= HEADER ================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#43A047"
+                android:padding="26dp">
+
+                <!-- SETTINGS BUTTON -->
+
+                <ImageButton
+                    android:id="@+id/btnSettings"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end"
+                    android:background="@android:color/transparent"
+                    android:src="@android:drawable/ic_menu_manage"
+                    app:tint="#000000"/>
+
+                <!-- WELCOME -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="👋 Welcome Back"
+                    android:textColor="#E8F5E9"
+                    android:textSize="16sp"/>
+
+                <!-- APP TITLE -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="🌱 ECOHABIT"
+                    android:textColor="#FFFFFF"
+                    android:textSize="38sp"
+                    android:textStyle="bold"/>
+
+                <!-- SUBTITLE -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Build your green lifestyle everyday 🌍"
+                    android:textColor="#E8F5E9"
+                    android:textSize="16sp"/>
+
+                <!-- ================= DAILY CHALLENGE ================= -->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#66BB6A"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌍 Daily Challenge"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txtChallenge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="🌍 Tidak memakai sedotan plastik hari ini (+20)"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- ================= MINI DASHBOARD ================= -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <!-- POINT CARD -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="95dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="⭐ Point"
+                                android:textColor="#43A047"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/txtDashboardPoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="0 Point"
+                                android:textColor="#FBC02D"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- STREAK CARD -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="95dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🔥 Streak"
+                                android:textColor="#FF9800"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/txtStreak"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0 Habit"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:textColor="#F57C00"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ================= TODAY PROGRESS ================= -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📈 Today Progress"
+                        android:textColor="#2E7D32"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressHabit"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="22dp"
+                        android:max="100"
+                        android:progress="0"/>
+
+                    <TextView
+                        android:id="@+id/txtProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0% Completed"
+                        android:textColor="#43A047"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="🌱 Eco Beginner"
+                        android:textColor="#2E7D32"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ================= QUICK MENU ================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp">
+
+                <!-- ================= ROW 1 ================= -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- STATS -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="#FFFFFF">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="📊"
+                                android:textSize="32sp"/>
+
+                            <Button
+                                android:id="@+id/btnStats"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Statistics"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textColor="#2E7D32"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- TIPS -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="#FFFFFF">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="💡"
+                                android:textSize="32sp"/>
+
+                            <Button
+                                android:id="@+id/btnTips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Eco Tips"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textColor="#2E7D32"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <!-- ================= ROW 2 ================= -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <!-- CALENDAR -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="#FFFFFF">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="📅"
+                                android:textSize="32sp"/>
+
+                            <Button
+                                android:id="@+id/btnCalendar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Calendar"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textColor="#2E7D32"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- ACHIEVEMENT -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="#FFFFFF">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🏆"
+                                android:textSize="32sp"/>
+
+                            <Button
+                                android:id="@+id/btnAchievement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Achievement"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textColor="#2E7D32"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ================= DAILY ECO TIPS ================= -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💡 Daily Eco Tips"
+                        android:textColor="#2E7D32"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Gunakan tas reusable untuk mengurangi sampah plastik sekali pakai 🌍"
+                        android:textColor="#616161"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ================= HABIT TITLE ================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:text="🌿 Your Habits"
+                android:textColor="#2E7D32"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <!-- ================= RECYCLER ================= -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHabit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:padding="14dp"/>
+
+            <!-- SPACE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- ================= FLOAT BUTTON ================= -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNav"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="26dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#43A047"
+        app:elevation="14dp"/>
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="18dp"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- HOME -->
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="🏠\nHome"
+            android:textColor="#43A047"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <!-- STATS -->
+
+        <Button
+            android:id="@+id/btnStatsBottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="📊\nStats"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <!-- TIPS -->
+
+        <Button
+            android:id="@+id/btnTipsBottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="💡\nTips"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <!-- PROFILE -->
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="👤\nProfile"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

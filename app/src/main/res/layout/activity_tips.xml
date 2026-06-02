@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ================= HEADER ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#43A047"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡 Eco Tips"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelajari kebiasaan kecil yang berdampak besar untuk bumi 🌍"
+                android:textColor="#E8F5E9"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- ================= CARD WATER ================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💧 Hemat Air"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menghemat air membantu menjaga ketersediaan air bersih untuk masa depan."
+                    android:textSize="15sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= CARD PLASTIC ================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPlastic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♻ Kurangi Plastik"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gunakan barang reusable agar sampah plastik berkurang."
+                    android:textSize="15sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= CARD BIKE ================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚴 Gunakan Sepeda"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bersepeda membantu mengurangi polusi udara dan menjaga kesehatan."
+                    android:textSize="15sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= CARD ELECTRIC ================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardElectric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💡 Hemat Listrik"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matikan perangkat elektronik saat tidak digunakan untuk menghemat energi."
+                    android:textSize="15sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= CARD TREE ================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌳 Menanam Pohon"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pohon membantu menghasilkan oksigen dan menyerap karbon dioksida."
+                    android:textSize="15sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= CARD FOOD ================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🍱 Kurangi Food Waste"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambil makanan secukupnya agar tidak banyak makanan terbuang."
+                    android:textSize="15sp"
+                    android:textColor="#616161"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

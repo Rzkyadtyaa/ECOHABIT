@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F9">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#43A047">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➕ Add New Habit"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai kebiasaan ramah lingkungan baru 🌱"
+            android:textColor="#E8F5E9"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- MAIN CARD -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="160dp"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#FFFFFF">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌿 Habit Title"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#2E7D32"/>
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/edtHabit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="14dp"
+                android:background="@android:color/transparent"
+                android:hint="Contoh: Bawa tumbler setiap hari"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:backgroundTint="#43A047"/>
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habit kecil bisa membawa perubahan besar 🌍"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="20dp"/>
+
+            <!-- BUTTON -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="✨ Save Habit"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#43A047"
+                android:layout_marginTop="28dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

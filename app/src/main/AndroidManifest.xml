@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- INTERNET -->
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
+    <!-- NOTIFICATION -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <!-- VIBRATION -->
+    <uses-permission
+        android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ECOHABIT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECOHABIT">
+
+        <!-- ================= SPLASH ================= -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <!-- ================= ONBOARDING ================= -->
+
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"/>
+
+        <!-- ================= LOGIN ================= -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
+
+        <!-- ================= REGISTER ================= -->
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+
+        <!-- ================= MAIN ================= -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <!-- ================= ADD HABIT ================= -->
+
+        <activity
+            android:name=".AddHabitActivity"
+            android:exported="false"/>
+
+        <!-- ================= STATISTICS ================= -->
+
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false"/>
+
+        <!-- ================= ACHIEVEMENT ================= -->
+
+        <activity
+            android:name=".AchievementActivity"
+            android:exported="false"/>
+
+        <!-- ================= CALENDAR ================= -->
+
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false"/>
+
+        <!-- ================= PROFILE ================= -->
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"/>
+
+        <!-- ================= SETTINGS ================= -->
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"/>
+
+        <!-- ================= TIPS ================= -->
+
+        <activity
+            android:name=".TipsActivity"
+            android:exported="false"/>
+
+        <!-- ================= TIPS DETAIL ================= -->
+
+        <activity
+            android:name=".TipsDetailActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
